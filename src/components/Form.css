@@ -1,0 +1,19 @@
+.Form input{
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 0.5em;
+  margin: 3px;
+}
+.Form td{
+  padding: 0.4em;
+  border: 1px solid white;
+}
+.Form tr{
+  padding: 10px;
+}
+.Form table{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
