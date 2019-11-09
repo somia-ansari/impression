@@ -8,7 +8,7 @@ export default function BasicInfo() {
     <div className="BasicInfo">
       <h1>Basic Information</h1>
       <form>
-        <input required type="text" placeholder="Your full name here" size="large" />
+        <input required type="text" placeholder="Your full name here" />
         <input type="email" placeholder="Your email here" />
         <input type="number" placeholder="Your contact number here" />
         <input type="number" placeholder="Your WhatsApp number here" />
@@ -16,7 +16,7 @@ export default function BasicInfo() {
           <Input size="large" addonBefore="Http://" addonAfter=".com" defaultValue="Your LinkedIn profile url here" />
         </div>
         <TextArea size="large" rows={4} maxLength={80} placeholder="Your Residential Address here" allowClear={true} />
-      </form>
+      </form >
     </div>
   )
 }

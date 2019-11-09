@@ -1,11 +1,9 @@
 import './WorkDetails.css';
 import React from 'react'
-
-import { DatePicker, Col, Row } from 'antd';
+import { DatePicker } from 'antd';
 import moment from 'moment';
 
 const { RangePicker } = DatePicker;
-
 const dateFormat = 'YYYY/MM/DD';
 
 

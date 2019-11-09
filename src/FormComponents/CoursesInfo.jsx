@@ -1,10 +1,9 @@
 import './CoursesInfo.css';
 import React from 'react'
-import { DatePicker, Row, Col } from 'antd';
+import { DatePicker } from 'antd';
 import moment from 'moment';
 
 const { RangePicker } = DatePicker;
-
 const dateFormat = 'YYYY/MM/DD';
 
 
