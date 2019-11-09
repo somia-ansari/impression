@@ -1,7 +1,7 @@
 import './WorkDetails.css';
 import React from 'react'
 
-import { DatePicker } from 'antd';
+import { DatePicker, Col, Row } from 'antd';
 import moment from 'moment';
 
 const { RangePicker } = DatePicker;
@@ -15,48 +15,62 @@ export default function WorkDetails() {
     <div className="WorkDetails">
       <form>
         <h1>Work Experience</h1>
-        <table>
-          <thead>
-            <tr>
-              <td>Designation</td>
-              <td>Company</td>
-              <td>Duration</td>
-            </tr>
 
-          </thead>
-          <tbody>
-            <tr>
-              <td><input type="text" placeholder="Post of work" /></td>
-              <td><input type="text" placeholder="Company name" /></td>
-              <td>
-                <RangePicker
-                  defaultValue={[moment('2015/01/01', dateFormat), moment('2015/01/01', dateFormat)]}
-                  format={dateFormat} className="range"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td><input type="text" placeholder="Post of work" /></td>
-              <td><input type="text" placeholder="Company name" /></td>
-              <td>
-                <RangePicker
-                  defaultValue={[moment('2015/01/01', dateFormat), moment('2015/01/01', dateFormat)]}
-                  format={dateFormat} className="range"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td><input type="text" placeholder="Post of work" /></td>
-              <td><input type="text" placeholder="Company name" /></td>
-              <td>
-                <RangePicker
-                  defaultValue={[moment('2015/01/01', dateFormat), moment('2015/01/01', dateFormat)]}
-                  format={dateFormat} className="range"
-                />
-              </td>
-            </tr>
-          </tbody>
-        </table>
+
+        <Row type="flex" justify="space-around">
+          <Col span={8}><h4>Designation</h4></Col>
+          <Col span={8}><h4>Company</h4></Col>
+          <Col span={8}><h4>Duration</h4></Col>
+        </Row>
+
+        <Row type="flex" justify="space-around">
+          <Col span={8}>
+            <input type="text" placeholder="Post of work" />
+          </Col>
+
+          <Col span={8}>
+            <input type="text" placeholder="Company name" />
+          </Col>
+          <Col span={8}>
+            <RangePicker
+              defaultValue={[moment('2015/01/01', dateFormat), moment('2015/01/01', dateFormat)]}
+              format={dateFormat} size="large"
+            />
+          </Col>
+
+        </Row>
+
+        <Row type="flex" justify="space-around">
+          <Col span={8}>
+            <input type="text" placeholder="Post of work" />
+          </Col>
+          <Col span={8}>
+            <input type="text" placeholder="Company name" />
+          </Col>
+          <Col span={8}>
+            <RangePicker
+              defaultValue={[moment('2015/01/01', dateFormat), moment('2015/01/01', dateFormat)]}
+              format={dateFormat} size="large"
+            />
+          </Col>
+        </Row>
+        <Row type="flex" justify="space-around">
+          <Col span={8}>
+            <input type="text" placeholder="Post of work" />
+          </Col>
+          <Col span={8}>
+            <input type="text" placeholder="Company name" />
+          </Col>
+          <Col span={8}>
+            <RangePicker
+              defaultValue={[moment('2015/01/01', dateFormat), moment('2015/01/01', dateFormat)]}
+              format={dateFormat} size="large"
+            />
+          </Col>
+        </Row>
+
+
+
       </form>
     </div>
   )

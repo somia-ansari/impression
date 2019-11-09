@@ -50,16 +50,24 @@ export default class Main extends Component {
             >
               <Menu.Item key="0"><img src={icon} alt="icon" />Your CV is your 1st impression in career</Menu.Item>
 
-              <Menu.Item key="1">Home</Menu.Item>
-              <Menu.Item key="2">Like my Repo</Menu.Item>
-              <Menu.Item key="3">Follow me</Menu.Item>
+              <Menu.Item key="1">
+                <a href="https://impressions-cv.web.app/" target="_blank" rel="noopener noreferrer">Home</a>
+              </Menu.Item>
+              <Menu.Item key="2">
+                <a href="https://github.com/somia-ansari/impression" target="_blank" rel="noopener noreferrer">Like Repo</a>
+
+              </Menu.Item>
+              <Menu.Item key="3">
+                <a href="https://github.com/somia-ansari/" target="_blank" rel="noopener noreferrer">Follow me</a>
+
+              </Menu.Item>
             </Menu>
           </Header>
           <Content style={{ padding: '0 50px' }}>
             <Breadcrumb style={{ margin: '16px 0' }}>
               <Breadcrumb.Item>Home</Breadcrumb.Item>
-              <Breadcrumb.Item>List</Breadcrumb.Item>
-              <Breadcrumb.Item>App</Breadcrumb.Item>
+              <Breadcrumb.Item>CV builder</Breadcrumb.Item>
+              <Breadcrumb.Item>Form</Breadcrumb.Item>
             </Breadcrumb>
             <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
               <FormPage />
@@ -68,7 +76,7 @@ export default class Main extends Component {
           </Content>
           <Footer style={{ textAlign: 'center' }}>
             Thank you for using this service. Like my github
-          <a href="http://" target="_blank" rel="noopener noreferrer"> repo</a>
+          <a href="https://github.com/somia-ansari/impression" target="_blank" rel="noopener noreferrer"> repo</a>
           </Footer>
         </Layout>
 
