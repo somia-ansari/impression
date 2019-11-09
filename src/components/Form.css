@@ -7,3 +7,14 @@
 .Form h4{
   color: teal;
 }
+.Form .wrapComp{
+  display: flex;
+  flex-wrap: wrap;
+}
+.Form .comp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}

@@ -11,60 +11,41 @@ const dateFormat = 'YYYY/MM/DD';
 export default function CoursesInfo() {
   return (
     <div className="CoursesInfo">
-      <h1>Courses Details</h1>
 
-      <Row type="flex" justify="space-around">
-        <Col span={8}><h4>Name of Course</h4></Col>
-        <Col span={8}><h4>Duration</h4></Col>
-        <Col span={8}><h4>Institute</h4></Col>
-      </Row>
+      <form>
+        <h1>Course Details</h1>
 
-      <Row type="flex" justify="space-around">
-        <Col span={8}>
-          <input type="text" placeholder="Name of Course" />
-        </Col>
+        <div className="wrapComp">
+          <div className='colOne comp'>
+            <h4>Name of Course</h4>
+            <input type="text" placeholder="Name of course" />
+            <input type="text" placeholder="Name of course" />
+            <input type="text" placeholder="Name of course" />
+          </div>
+          <div className="colTwo comp">
+            <h4>Institutes</h4>
+            <input type="text" placeholder="Name of Institute" />
+            <input type="text" placeholder="Name of Institute" />
+            <input type="text" placeholder="Name of Institute" />
+          </div>
 
-        <Col span={8}>
-          <RangePicker
-            defaultValue={[moment('2015/01/01', dateFormat), moment('2015/01/01', dateFormat)]}
-            format={dateFormat} size="large"
-          />
-        </Col>
-
-        <Col span={8}>
-          <input type="text" placeholder="name of Institute" />
-        </Col>
-      </Row>
-
-      <Row type="flex" justify="space-around">
-        <Col span={8}>
-          <input type="text" placeholder="Name of Course" />
-        </Col>
-        <Col span={8}>
-          <RangePicker
-            defaultValue={[moment('2015/01/01', dateFormat), moment('2015/01/01', dateFormat)]}
-            format={dateFormat} size="large"
-          />
-        </Col>
-        <Col span={8}>
-          <input type="text" placeholder="Name of Institute" />
-        </Col>
-      </Row>
-      <Row type="flex" justify="space-around">
-        <Col span={8}>
-          <input type="text" placeholder="Name of Course" />
-        </Col>
-        <Col span={8}>
-          <RangePicker
-            defaultValue={[moment('2015/01/01', dateFormat), moment('2015/01/01', dateFormat)]}
-            format={dateFormat} size="large"
-          />
-        </Col>
-        <Col span={8}>
-          <input type="text" placeholder="Name of Institute" />
-        </Col>
-      </Row>
-
+          <div className="colThree comp">
+            <h4>Duration</h4>
+            <RangePicker
+              defaultValue={[moment('2015/01/01', dateFormat), moment('2015/01/01', dateFormat)]}
+              format={dateFormat} size="large"
+            />
+            <RangePicker
+              defaultValue={[moment('2015/01/01', dateFormat), moment('2015/01/01', dateFormat)]}
+              format={dateFormat} size="large"
+            />
+            <RangePicker
+              defaultValue={[moment('2015/01/01', dateFormat), moment('2015/01/01', dateFormat)]}
+              format={dateFormat} size="large"
+            />
+          </div>
+        </div>
+      </form>
     </div >
   )
 }

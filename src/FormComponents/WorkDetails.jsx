@@ -16,62 +16,37 @@ export default function WorkDetails() {
       <form>
         <h1>Work Experience</h1>
 
-
-        <Row type="flex" justify="space-around">
-          <Col span={8}><h4>Designation</h4></Col>
-          <Col span={8}><h4>Company</h4></Col>
-          <Col span={8}><h4>Duration</h4></Col>
-        </Row>
-
-        <Row type="flex" justify="space-around">
-          <Col span={8}>
+        <div className="wrapComp">
+          <div className='colOne comp'>
+            <h4>Designation</h4>
             <input type="text" placeholder="Post of work" />
-          </Col>
-
-          <Col span={8}>
+            <input type="text" placeholder="Post of work" />
+            <input type="text" placeholder="Post of work" />
+          </div>
+          <div className="colTwo comp">
+            <h4>Company</h4>
             <input type="text" placeholder="Company name" />
-          </Col>
-          <Col span={8}>
+            <input type="text" placeholder="Company name" />
+            <input type="text" placeholder="Company name" />
+          </div>
+
+          <div className="colThree comp">
+            <h4>Duration</h4>
             <RangePicker
               defaultValue={[moment('2015/01/01', dateFormat), moment('2015/01/01', dateFormat)]}
               format={dateFormat} size="large"
             />
-          </Col>
-
-        </Row>
-
-        <Row type="flex" justify="space-around">
-          <Col span={8}>
-            <input type="text" placeholder="Post of work" />
-          </Col>
-          <Col span={8}>
-            <input type="text" placeholder="Company name" />
-          </Col>
-          <Col span={8}>
             <RangePicker
               defaultValue={[moment('2015/01/01', dateFormat), moment('2015/01/01', dateFormat)]}
               format={dateFormat} size="large"
             />
-          </Col>
-        </Row>
-        <Row type="flex" justify="space-around">
-          <Col span={8}>
-            <input type="text" placeholder="Post of work" />
-          </Col>
-          <Col span={8}>
-            <input type="text" placeholder="Company name" />
-          </Col>
-          <Col span={8}>
             <RangePicker
               defaultValue={[moment('2015/01/01', dateFormat), moment('2015/01/01', dateFormat)]}
               format={dateFormat} size="large"
             />
-          </Col>
-        </Row>
-
-
-
+          </div>
+        </div>
       </form>
-    </div>
+    </div >
   )
 }
