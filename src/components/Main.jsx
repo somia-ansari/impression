@@ -70,6 +70,7 @@ export default class Main extends Component {
               <Breadcrumb.Item>Form</Breadcrumb.Item>
             </Breadcrumb>
             <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
+             
               <FormPage />
 
             </div>
