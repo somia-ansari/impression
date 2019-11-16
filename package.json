@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/aliyun-theme": "0.0.4",
+    "@ant-design/dark-theme": "^1.0.3",
     "antd": "^3.25.0",
     "bootstrap": "^4.3.1",
     "docx": "^5.0.0-rc7",
